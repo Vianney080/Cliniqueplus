@@ -1,0 +1,127 @@
+/* Style de la barre supérieure */
+.top-bar {
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: linear-gradient(90deg, #0d6efd 0%, #198754 100%);
+}
+
+/* Logo */
+.navbar-brand img {
+  max-height: 45px;
+}
+
+/* Navbar lien */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+  background-color: rgba(13, 110, 253, 0.05);
+  border-radius: 5px;
+}
+
+/* Boutons */
+.navbar-nav .btn {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .btn:hover {
+  transform: scale(1.05);
+}
+
+/* Sélecteur de langue */
+.navbar-nav .form-select {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Bouton thème */
+.navbar-nav button.btn-outline-secondary {
+  font-size: 0.9rem;
+  padding: 0.3rem 0.6rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* CORRECTION : Dropdown compatible mode sombre/clair */
+/* Mode clair (par défaut) */
+[data-bs-theme="light"] .dropdown-menu .dropdown-item {
+  color: #212529; /* Texte sombre pour fond clair */
+}
+
+[data-bs-theme="light"] .dropdown-menu .dropdown-item:hover,
+[data-bs-theme="light"] .dropdown-menu .dropdown-item:focus {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+/* Mode sombre */
+[data-bs-theme="dark"] .dropdown-menu {
+  background-color: #212529;
+  border: 1px solid #495057;
+}
+
+[data-bs-theme="dark"] .dropdown-menu .dropdown-item {
+  color: #ffffff; /* Texte blanc pour fond sombre */
+}
+
+[data-bs-theme="dark"] .dropdown-menu .dropdown-item:hover,
+[data-bs-theme="dark"] .dropdown-menu .dropdown-item:focus {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+/* Alternative : Si vous n'utilisez pas data-bs-theme */
+/* Détection automatique du thème sombre */
+@media (prefers-color-scheme: dark) {
+  .dropdown-menu {
+    background-color: #212529;
+    border: 1px solid #495057;
+  }
+  
+  .dropdown-menu .dropdown-item {
+    color: #ffffff !important;
+  }
+  
+  .dropdown-menu .dropdown-item:hover,
+  .dropdown-menu .dropdown-item:focus {
+    background-color: #0d6efd;
+    color: #ffffff !important;
+  }
+}
+
+/* Fallback : Style général plus sûr */
+.dropdown-menu .dropdown-item {
+  color: var(--bs-dropdown-link-color, #212529);
+  transition: all 0.2s ease;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #0d6efd;
+  color: #ffffff !important;
+}
+
+/* Ouvre le dropdown automatiquement au survol */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}

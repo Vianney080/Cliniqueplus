@@ -1,0 +1,102 @@
+/* src/pages/ProfilProfessionnelMedecin.css */
+.profil-container {
+  max-width: 600px;
+  margin: 90px auto 40px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profil-container h2 {
+  text-align: center;
+  color: #0d6efd;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--btn-bg);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--btn-hover);
+}
+
+.profil-container {
+  max-width: 600px;
+  margin: 90px auto 40px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profil-container h2 {
+  text-align: center;
+  color: #0d6efd;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--btn-bg);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--btn-hover);
+}

@@ -1,0 +1,91 @@
+/* src/pages/Connexion.css */
+
+/* Thème clair/sombre dynamique */
+:root {
+  --background-color: #f2f2f2;
+  --form-bg: #ffffff;
+  --text-color: #212529;
+  --input-bg: #ffffff;
+  --input-border: #ccc;
+  --link-color: #007bff;
+}
+
+body.bg-dark {
+  --background-color: #121212;
+  --form-bg: #1e1e1e;
+  --text-color: #f1f1f1;
+  --input-bg: #2a2a2a;
+  --input-border: #555;
+  --link-color: #66b0ff;
+}
+
+.connexion-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: var(--background-color);
+  color: var(--text-color);
+  padding: 40px 20px;
+}
+
+.connexion-form {
+  background: var(--form-bg);
+  color: var(--text-color);
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.connexion-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.connexion-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+}
+
+.connexion-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.connexion-form button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.bottom-links {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.bottom-links a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.bottom-links a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,62 @@
+/* src/pages/Pneumologie.css */
+
+/* Variables de thème */
+:root {
+  --background-color: #ffffff;
+  --text-color: #212529;
+  --card-bg: #f8f9fa;
+  --card-text: #212529;
+}
+
+body.bg-dark {
+  --background-color: #121212;
+  --text-color: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --card-text: #ffffff;
+}
+
+.pneumo-page {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.pneumo-page .cover-image {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.pneumo-page .cover-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pneumo-page .overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+}
+
+.pneumo-page .overlay-text h1 {
+  font-size: 2.5rem;
+}
+
+.pneumo-page .overlay-text p {
+  font-size: 1.1rem;
+}
+
+.pneumo-page .content-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.pneumo-page .card {
+  background: var(--card-bg);
+  color: inherit;
+  border-radius: 8px;
+  padding: 30px;
+}

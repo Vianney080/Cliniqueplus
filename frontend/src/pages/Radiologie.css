@@ -1,0 +1,59 @@
+/* src/pages/Radiologie.css */
+
+/* Variables de thème */
+:root {
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+  --card-bg: #ffffff;
+  --card-text: #212529;
+}
+
+body.bg-dark {
+  --background-color: #121212;
+  --text-color: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --card-text: #ffffff;
+}
+
+.radiologie-page {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding-bottom: 40px;
+}
+
+.cover-image {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.cover-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.btn-rdv:hover {
+  background-color: #0056b3;
+}

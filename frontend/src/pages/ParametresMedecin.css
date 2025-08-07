@@ -1,0 +1,82 @@
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #212529;
+  --input-bg: #fff;
+  --input-border: #ccc;
+  --btn-bg: #1a73e8;
+  --btn-hover: #135cb1;
+}
+
+body.bg-dark {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --input-bg: #1e1e1e;
+  --input-border: #333;
+  --btn-bg: #1a73e8;
+  --btn-hover: #135cb1;
+}
+
+.parametres-container {
+  max-width: 800px;
+  margin: 90px auto 40px;
+  padding: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.parametres-container h2 {
+  color: #0d6efd;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.parametres-section {
+  margin-top: 30px;
+}
+
+.parametres-section h4 {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.parametres-section select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+.parametres-section button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: var(--btn-bg);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.parametres-section button:hover {
+  background-color: var(--btn-hover);
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 150vh;
+}
+
+
+main {
+  flex: 1;
+}
